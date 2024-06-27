@@ -6,8 +6,8 @@
   </p>
 
 <!-- This repository is an official implementation of the paper "Hyperspectral Image Dataset for Individual Penguin Identification" accepted to IGARSS2024. -->
-
-## Installation
+## Coming soon...
+<!-- ## Installation
 
 This project uses Poetry for dependency management. Install dependencies using Poetry:
 
@@ -45,7 +45,7 @@ This project utilizes datasets uploaded on Hugging Face. The primary dataset use
 
 ```
 
-```
+``` -->
 
 ## License
 
