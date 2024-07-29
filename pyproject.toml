@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "hsi-penguinid"
+version = "0.1.0"
+description = ""
+authors = ["dekkaiinu <youtanoboru1354@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.14"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
