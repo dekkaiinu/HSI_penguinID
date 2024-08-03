@@ -1,7 +1,7 @@
 # HSI_penguinID
   <p>
     <a href='https://tdu.box.com/s/e96lruwtq18b197a46ws5wv7kcg5g8ew'>
-      <img src='https://img.shields.io/badge/Dataset-Box-brightblue' alt='Box'>
+      <img src='https://img.shields.io/badge/Dataset-Box-blue' alt='Box'>
     </a>
   </p>
 
