@@ -1,0 +1,9 @@
+# データセットの定義
+path: ./dataset/YOLO_pretrain/dataset/
+train: ./dataset/YOLO_pretrain/dataset/train
+val: ./dataset/YOLO_pretrain/dataset/val
+test: ./dataset/YOLO_pretrain/dataset/test
+
+# クラスの定義
+nc: 1  # クラスの数
+names: ['penguin']  # クラス名のリスト

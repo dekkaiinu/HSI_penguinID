@@ -8,10 +8,10 @@ from identify.extract_pixels.extract_pixels import extract_pixels
 from identify.pixel_wise_mlp.pixel_wise_mlp import pixel_wise_mlp
 from identify.calc_penguin_id.calc_penguin_id import calc_penguin_id
 
-def main(hsi: np.ndarray, detect_model: torch.nn.Module, identify_model: torch.nn.Module, device: torch.device):
+def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identify_model: torch.nn.Module, device: torch.device):
     rgb = hs2rgb(hsi)
 
-    pred_bboxs = detector(rgb, device, detect_model, stride=model.stride, conf_thres=0.45, iou_thres=0.25, classes=None, resize=640)
+    pred_bboxs = detector(rgb, device, detect_model, stride=detect_model.stride, conf_thres=0.45, iou_thres=0.25, classes=None, resize=640)
 
     hs_pixels = extract_pixels(hsi, pred_bboxs)
 
@@ -38,4 +38,5 @@ if __name__ == "__main__":
     identify_model.to(device)
 
     identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-02-21/18-49/weight.pt'))
-    main(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device)
+
+    identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device)
