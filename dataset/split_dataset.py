@@ -38,13 +38,16 @@ def pick_dataset(dataset_info):
         date = data_info['meta_data']['date']
         if date == '20230623' or date == '20230627':
             new_annotation = []
-            for annotation in data_info['annotations']:
+            for annotation in data_info['annotation']:
                 if annotation['penguin_id'] in target_id_list:
                     new_annotation.append(annotation)
                 else:
                     annotation['penguin_id'] = '0000'
                     new_annotation.append(annotation)
-            data_info['annotations'] = new_annotation
+            data_info['annotation'] = new_annotation
             if len(new_annotation) > 0:
                 new_dataset_info.append(data_info)
     return new_dataset_info
+
+if __name__ == '__main__':
+    split_dataset('/mnt/hdd3/datasets/hyper_penguin/hyper_penguin/hyper_penguin.json')

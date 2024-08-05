@@ -1,0 +1,5042 @@
+[
+    {
+        "image_id": "20230623145841",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "145841",
+            "set": "set11",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623145416",
+            "white_image_id": "w20230623145532"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1132,
+                    674,
+                    165,
+                    151
+                ],
+                "segmentation_mask": "20230623145841_1346.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    808,
+                    523,
+                    162,
+                    254
+                ],
+                "segmentation_mask": "20230623145841_1676.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627104002",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "104002",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    828,
+                    582,
+                    159,
+                    227
+                ],
+                "segmentation_mask": "20230627104002_0356.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1368,
+                    638,
+                    183,
+                    150
+                ],
+                "segmentation_mask": "20230627104002_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    225,
+                    568,
+                    213,
+                    282
+                ],
+                "segmentation_mask": "20230627104002_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627104712",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "104712",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    883,
+                    576,
+                    203,
+                    202
+                ],
+                "segmentation_mask": "20230627104712_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1441,
+                    513,
+                    170,
+                    253
+                ],
+                "segmentation_mask": "20230627104712_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    442,
+                    597,
+                    166,
+                    202
+                ],
+                "segmentation_mask": "20230627104712_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623131105",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "131105",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623130418",
+            "white_image_id": "w20230623130712"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    230,
+                    477,
+                    357,
+                    125
+                ],
+                "segmentation_mask": "20230623131105_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1411,
+                    489,
+                    177,
+                    127
+                ],
+                "segmentation_mask": "20230623131105_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    1177,
+                    486,
+                    209,
+                    122
+                ],
+                "segmentation_mask": "20230623131105_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623104031",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "104031",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623101644",
+            "white_image_id": "w20230623101842"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    664,
+                    254,
+                    216,
+                    353
+                ],
+                "segmentation_mask": "20230623104031_0143.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    3,
+                    282,
+                    154,
+                    305
+                ],
+                "segmentation_mask": "20230623104031_0166.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1004,
+                    283,
+                    209,
+                    319
+                ],
+                "segmentation_mask": "20230623104031_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    841,
+                    294,
+                    192,
+                    308
+                ],
+                "segmentation_mask": "20230623104031_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623144236",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "144236",
+            "set": "set10",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623143949",
+            "white_image_id": "w20230623144126"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    804,
+                    463,
+                    158,
+                    258
+                ],
+                "segmentation_mask": "20230623144236_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    581,
+                    542,
+                    154,
+                    191
+                ],
+                "segmentation_mask": "20230623144236_0346.png"
+            },
+            {
+                "penguin_id": "0553",
+                "bbox": [
+                    1004,
+                    477,
+                    209,
+                    295
+                ],
+                "segmentation_mask": "20230623144236_0553.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623142940",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "142940",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623142527",
+            "white_image_id": "w20230623142621"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    854,
+                    572,
+                    174,
+                    94
+                ],
+                "segmentation_mask": "20230623142940_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    960,
+                    477,
+                    116,
+                    191
+                ],
+                "segmentation_mask": "20230623142940_0346.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    1000,
+                    688,
+                    229,
+                    253
+                ],
+                "segmentation_mask": "20230623142940_0356.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    1092,
+                    695,
+                    264,
+                    111
+                ],
+                "segmentation_mask": "20230623142940_0456.png"
+            },
+            {
+                "penguin_id": "0553",
+                "bbox": [
+                    1086,
+                    490,
+                    103,
+                    161
+                ],
+                "segmentation_mask": "20230623142940_0553.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627110033",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "110033",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    1060,
+                    605,
+                    180,
+                    244
+                ],
+                "segmentation_mask": "20230627110033_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1349,
+                    583,
+                    184,
+                    261
+                ],
+                "segmentation_mask": "20230627110033_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627142150",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "142150",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    924,
+                    542,
+                    162,
+                    220
+                ],
+                "segmentation_mask": "20230627142150_0133.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    638,
+                    488,
+                    144,
+                    267
+                ],
+                "segmentation_mask": "20230627142150_0146.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623150847",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "150847",
+            "set": "set11",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623145416",
+            "white_image_id": "w20230623145532"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1144,
+                    466,
+                    205,
+                    375
+                ],
+                "segmentation_mask": "20230623150847_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    792,
+                    323,
+                    183,
+                    254
+                ],
+                "segmentation_mask": "20230623150847_1676.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141112",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141112",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    1192,
+                    410,
+                    167,
+                    302
+                ],
+                "segmentation_mask": "20230627141112_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1569,
+                    451,
+                    173,
+                    271
+                ],
+                "segmentation_mask": "20230627141112_0143.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    1026,
+                    465,
+                    172,
+                    254
+                ],
+                "segmentation_mask": "20230627141112_0146.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    124,
+                    466,
+                    191,
+                    268
+                ],
+                "segmentation_mask": "20230627141112_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623113434",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "113434",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623113235",
+            "white_image_id": "w20230623113321"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1365,
+                    446,
+                    252,
+                    237
+                ],
+                "segmentation_mask": "20230623113434_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    983,
+                    388,
+                    173,
+                    290
+                ],
+                "segmentation_mask": "20230623113434_0373.png"
+            },
+            {
+                "penguin_id": "0477",
+                "bbox": [
+                    773,
+                    539,
+                    161,
+                    165
+                ],
+                "segmentation_mask": "20230623113434_0477.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623112533",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "112533",
+            "set": "set4",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623111825",
+            "white_image_id": "w20230623111914"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    274,
+                    462,
+                    139,
+                    189
+                ],
+                "segmentation_mask": "20230623112533_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1007,
+                    440,
+                    147,
+                    235
+                ],
+                "segmentation_mask": "20230623112533_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    849,
+                    503,
+                    172,
+                    165
+                ],
+                "segmentation_mask": "20230623112533_0346.png"
+            },
+            {
+                "penguin_id": "0376",
+                "bbox": [
+                    654,
+                    491,
+                    129,
+                    172
+                ],
+                "segmentation_mask": "20230623112533_0376.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627114225",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "114225",
+            "set": "set3",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627113721",
+            "white_image_id": "w20230627113850"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1218,
+                    653,
+                    220,
+                    256
+                ],
+                "segmentation_mask": "20230627114225_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1696,
+                    589,
+                    196,
+                    306
+                ],
+                "segmentation_mask": "20230627114225_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    716,
+                    746,
+                    319,
+                    129
+                ],
+                "segmentation_mask": "20230627114225_1176.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1106,
+                    647,
+                    232,
+                    249
+                ],
+                "segmentation_mask": "20230627114225_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623110125",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "110125",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623104622",
+            "white_image_id": "w20230623104738"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    756,
+                    407,
+                    150,
+                    269
+                ],
+                "segmentation_mask": "20230623110125_1147.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    895,
+                    448,
+                    199,
+                    286
+                ],
+                "segmentation_mask": "20230623110125_1676.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623103643",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "103643",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623101644",
+            "white_image_id": "w20230623101842"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1115,
+                    331,
+                    169,
+                    257
+                ],
+                "segmentation_mask": "20230623103643_0143.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    569,
+                    274,
+                    195,
+                    306
+                ],
+                "segmentation_mask": "20230623103643_0356.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1461,
+                    370,
+                    161,
+                    232
+                ],
+                "segmentation_mask": "20230623103643_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627133641",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "133641",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627132506",
+            "white_image_id": "w20230627132304"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    706,
+                    590,
+                    185,
+                    286
+                ],
+                "segmentation_mask": "20230627133641_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1196,
+                    673,
+                    317,
+                    191
+                ],
+                "segmentation_mask": "20230627133641_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    514,
+                    741,
+                    167,
+                    132
+                ],
+                "segmentation_mask": "20230627133641_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623131222",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "131222",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623130418",
+            "white_image_id": "w20230623130712"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    243,
+                    462,
+                    330,
+                    111
+                ],
+                "segmentation_mask": "20230623131222_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1425,
+                    464,
+                    166,
+                    122
+                ],
+                "segmentation_mask": "20230623131222_0166.png"
+            },
+            {
+                "penguin_id": "0343",
+                "bbox": [
+                    329,
+                    342,
+                    151,
+                    177
+                ],
+                "segmentation_mask": "20230623131222_0343.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    1165,
+                    462,
+                    218,
+                    118
+                ],
+                "segmentation_mask": "20230623131222_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627145846",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "145846",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    887,
+                    677,
+                    147,
+                    206
+                ],
+                "segmentation_mask": "20230627145846_0126.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    817,
+                    678,
+                    150,
+                    206
+                ],
+                "segmentation_mask": "20230627145846_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623113532",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "113532",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623113235",
+            "white_image_id": "w20230623113321"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    981,
+                    391,
+                    227,
+                    283
+                ],
+                "segmentation_mask": "20230623113532_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    567,
+                    393,
+                    170,
+                    302
+                ],
+                "segmentation_mask": "20230623113532_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1215,
+                    388,
+                    203,
+                    309
+                ],
+                "segmentation_mask": "20230623113532_0473.png"
+            },
+            {
+                "penguin_id": "0477",
+                "bbox": [
+                    334,
+                    555,
+                    166,
+                    156
+                ],
+                "segmentation_mask": "20230623113532_0477.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623131405",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "131405",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623130418",
+            "white_image_id": "w20230623130712"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    340,
+                    496,
+                    340,
+                    115
+                ],
+                "segmentation_mask": "20230623131405_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1496,
+                    508,
+                    185,
+                    127
+                ],
+                "segmentation_mask": "20230623131405_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    1248,
+                    514,
+                    239,
+                    108
+                ],
+                "segmentation_mask": "20230623131405_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627144427",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "144427",
+            "set": "set8",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627144053",
+            "white_image_id": "w20230627144149"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    503,
+                    337,
+                    246,
+                    205
+                ],
+                "segmentation_mask": "20230627144427_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1207,
+                    455,
+                    328,
+                    228
+                ],
+                "segmentation_mask": "20230627144427_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    701,
+                    143,
+                    203,
+                    254
+                ],
+                "segmentation_mask": "20230627144427_1147.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    420,
+                    335,
+                    311,
+                    118
+                ],
+                "segmentation_mask": "20230627144427_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141558",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141558",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1071,
+                    510,
+                    116,
+                    222
+                ],
+                "segmentation_mask": "20230627141558_0133.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    746,
+                    459,
+                    137,
+                    264
+                ],
+                "segmentation_mask": "20230627141558_0146.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    989,
+                    492,
+                    119,
+                    233
+                ],
+                "segmentation_mask": "20230627141558_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627104121",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "104121",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    402,
+                    685,
+                    140,
+                    158
+                ],
+                "segmentation_mask": "20230627104121_0166.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    826,
+                    510,
+                    178,
+                    291
+                ],
+                "segmentation_mask": "20230627104121_0356.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1452,
+                    514,
+                    166,
+                    273
+                ],
+                "segmentation_mask": "20230627104121_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    967,
+                    517,
+                    222,
+                    311
+                ],
+                "segmentation_mask": "20230627104121_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627120016",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "120016",
+            "set": "set3",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": null,
+            "white_image_id": null
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1037,
+                    750,
+                    317,
+                    205
+                ],
+                "segmentation_mask": "20230627120016_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    726,
+                    718,
+                    298,
+                    181
+                ],
+                "segmentation_mask": "20230627120016_1176.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    961,
+                    753,
+                    213,
+                    115
+                ],
+                "segmentation_mask": "20230627120016_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623102047",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "102047",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623101644",
+            "white_image_id": "w20230623101842"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1258,
+                    338,
+                    151,
+                    278
+                ],
+                "segmentation_mask": "20230623102047_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    770,
+                    476,
+                    126,
+                    112
+                ],
+                "segmentation_mask": "20230623102047_0473.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1373,
+                    377,
+                    140,
+                    222
+                ],
+                "segmentation_mask": "20230623102047_0566.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1150,
+                    472,
+                    112,
+                    126
+                ],
+                "segmentation_mask": "20230623102047_0773.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627120425",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "120425",
+            "set": "set3",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": null,
+            "white_image_id": null
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    481,
+                    600,
+                    337,
+                    232
+                ],
+                "segmentation_mask": "20230627120425_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1119,
+                    491,
+                    232,
+                    345
+                ],
+                "segmentation_mask": "20230627120425_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    313,
+                    553,
+                    282,
+                    125
+                ],
+                "segmentation_mask": "20230627120425_1176.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627122403",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "122403",
+            "set": "set4",
+            "weather": "cloudy",
+            "scanrate": "s90",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "10.99ms",
+            "black_image_id": null,
+            "white_image_id": null
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1110,
+                    636,
+                    136,
+                    213
+                ],
+                "segmentation_mask": "20230627122403_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    949,
+                    600,
+                    167,
+                    256
+                ],
+                "segmentation_mask": "20230627122403_0373.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    825,
+                    569,
+                    172,
+                    304
+                ],
+                "segmentation_mask": "20230627122403_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627140727",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "140727",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    844,
+                    424,
+                    159,
+                    289
+                ],
+                "segmentation_mask": "20230627140727_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1704,
+                    508,
+                    122,
+                    213
+                ],
+                "segmentation_mask": "20230627140727_0143.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    0,
+                    465,
+                    187,
+                    258
+                ],
+                "segmentation_mask": "20230627140727_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    243,
+                    470,
+                    184,
+                    254
+                ],
+                "segmentation_mask": "20230627140727_0346.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    722,
+                    417,
+                    166,
+                    295
+                ],
+                "segmentation_mask": "20230627140727_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    631,
+                    572,
+                    115,
+                    133
+                ],
+                "segmentation_mask": "20230627140727_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141516",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141516",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1254,
+                    516,
+                    116,
+                    220
+                ],
+                "segmentation_mask": "20230627141516_0133.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    859,
+                    459,
+                    169,
+                    271
+                ],
+                "segmentation_mask": "20230627141516_0146.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    62,
+                    498,
+                    170,
+                    246
+                ],
+                "segmentation_mask": "20230627141516_0346.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1143,
+                    498,
+                    155,
+                    236
+                ],
+                "segmentation_mask": "20230627141516_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627134559",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "134559",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627134528",
+            "white_image_id": "w20230627134449"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    341,
+                    360,
+                    184,
+                    261
+                ],
+                "segmentation_mask": "20230627134559_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1131,
+                    479,
+                    204,
+                    161
+                ],
+                "segmentation_mask": "20230627134559_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    857,
+                    362,
+                    156,
+                    273
+                ],
+                "segmentation_mask": "20230627134559_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623140417",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "140417",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623134801",
+            "white_image_id": "w20230623134802"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    214,
+                    581,
+                    304,
+                    113
+                ],
+                "segmentation_mask": "20230623140417_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    916,
+                    469,
+                    206,
+                    239
+                ],
+                "segmentation_mask": "20230623140417_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    716,
+                    594,
+                    172,
+                    110
+                ],
+                "segmentation_mask": "20230623140417_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1150,
+                    491,
+                    165,
+                    227
+                ],
+                "segmentation_mask": "20230623140417_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141812",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141812",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1174,
+                    488,
+                    137,
+                    222
+                ],
+                "segmentation_mask": "20230627141812_0133.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    806,
+                    468,
+                    137,
+                    243
+                ],
+                "segmentation_mask": "20230627141812_0146.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    188,
+                    465,
+                    202,
+                    242
+                ],
+                "segmentation_mask": "20230627141812_0346.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1108,
+                    470,
+                    143,
+                    238
+                ],
+                "segmentation_mask": "20230627141812_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627134812",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "134812",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627134528",
+            "white_image_id": "w20230627134449"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    663,
+                    360,
+                    178,
+                    263
+                ],
+                "segmentation_mask": "20230627134812_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1159,
+                    422,
+                    151,
+                    208
+                ],
+                "segmentation_mask": "20230627134812_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    870,
+                    340,
+                    180,
+                    287
+                ],
+                "segmentation_mask": "20230627134812_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    536,
+                    321,
+                    175,
+                    294
+                ],
+                "segmentation_mask": "20230627134812_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623144316",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "144316",
+            "set": "set10",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623143949",
+            "white_image_id": "w20230623144126"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    796,
+                    466,
+                    183,
+                    257
+                ],
+                "segmentation_mask": "20230623144316_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    551,
+                    494,
+                    167,
+                    236
+                ],
+                "segmentation_mask": "20230623144316_0346.png"
+            },
+            {
+                "penguin_id": "0553",
+                "bbox": [
+                    1024,
+                    476,
+                    181,
+                    289
+                ],
+                "segmentation_mask": "20230623144316_0553.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623102312",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "102312",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623101644",
+            "white_image_id": "w20230623101842"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1285,
+                    375,
+                    134,
+                    217
+                ],
+                "segmentation_mask": "20230623102312_0566.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    687,
+                    447,
+                    147,
+                    139
+                ],
+                "segmentation_mask": "20230623102312_0773.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627110151",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "110151",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    892,
+                    583,
+                    174,
+                    240
+                ],
+                "segmentation_mask": "20230627110151_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1183,
+                    553,
+                    169,
+                    262
+                ],
+                "segmentation_mask": "20230627110151_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    340,
+                    568,
+                    218,
+                    293
+                ],
+                "segmentation_mask": "20230627110151_0456.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    501,
+                    576,
+                    143,
+                    254
+                ],
+                "segmentation_mask": "20230627110151_0576.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141134",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141134",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1250,
+                    480,
+                    166,
+                    242
+                ],
+                "segmentation_mask": "20230627141134_0133.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1631,
+                    454,
+                    151,
+                    269
+                ],
+                "segmentation_mask": "20230627141134_0143.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    1092,
+                    425,
+                    148,
+                    297
+                ],
+                "segmentation_mask": "20230627141134_0146.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    128,
+                    472,
+                    177,
+                    254
+                ],
+                "segmentation_mask": "20230627141134_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623103611",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "103611",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623101644",
+            "white_image_id": "w20230623101842"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1205,
+                    338,
+                    172,
+                    282
+                ],
+                "segmentation_mask": "20230623103611_0143.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    916,
+                    308,
+                    165,
+                    282
+                ],
+                "segmentation_mask": "20230623103611_0356.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1349,
+                    359,
+                    155,
+                    268
+                ],
+                "segmentation_mask": "20230623103611_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623113924",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "113924",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623113235",
+            "white_image_id": "w20230623113321"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    787,
+                    429,
+                    194,
+                    275
+                ],
+                "segmentation_mask": "20230623113924_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    386,
+                    405,
+                    190,
+                    258
+                ],
+                "segmentation_mask": "20230623113924_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1264,
+                    457,
+                    175,
+                    240
+                ],
+                "segmentation_mask": "20230623113924_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627105147",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "105147",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    1342,
+                    472,
+                    156,
+                    253
+                ],
+                "segmentation_mask": "20230627105147_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1524,
+                    476,
+                    172,
+                    240
+                ],
+                "segmentation_mask": "20230627105147_0373.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1126,
+                    472,
+                    167,
+                    261
+                ],
+                "segmentation_mask": "20230627105147_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627144350",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "144350",
+            "set": "set8",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627144053",
+            "white_image_id": "w20230627144149"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    613,
+                    546,
+                    312,
+                    206
+                ],
+                "segmentation_mask": "20230627144350_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1425,
+                    587,
+                    339,
+                    178
+                ],
+                "segmentation_mask": "20230627144350_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    668,
+                    341,
+                    192,
+                    246
+                ],
+                "segmentation_mask": "20230627144350_1147.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    490,
+                    536,
+                    293,
+                    134
+                ],
+                "segmentation_mask": "20230627144350_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623142842",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "142842",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623142527",
+            "white_image_id": "w20230623142621"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    859,
+                    448,
+                    122,
+                    217
+                ],
+                "segmentation_mask": "20230623142842_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    954,
+                    488,
+                    123,
+                    176
+                ],
+                "segmentation_mask": "20230623142842_0346.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    1019,
+                    685,
+                    206,
+                    251
+                ],
+                "segmentation_mask": "20230623142842_0356.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    1099,
+                    688,
+                    253,
+                    116
+                ],
+                "segmentation_mask": "20230623142842_0456.png"
+            },
+            {
+                "penguin_id": "0553",
+                "bbox": [
+                    1090,
+                    514,
+                    94,
+                    134
+                ],
+                "segmentation_mask": "20230623142842_0553.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627150608",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "150608",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    700,
+                    780,
+                    163,
+                    115
+                ],
+                "segmentation_mask": "20230627150608_0126.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    768,
+                    637,
+                    150,
+                    220
+                ],
+                "segmentation_mask": "20230627150608_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627110309",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "110309",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    939,
+                    594,
+                    150,
+                    222
+                ],
+                "segmentation_mask": "20230627110309_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1184,
+                    556,
+                    170,
+                    257
+                ],
+                "segmentation_mask": "20230627110309_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    412,
+                    589,
+                    210,
+                    269
+                ],
+                "segmentation_mask": "20230627110309_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623112105",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "112105",
+            "set": "set4",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623111825",
+            "white_image_id": "w20230623111914"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    422,
+                    526,
+                    149,
+                    170
+                ],
+                "segmentation_mask": "20230623112105_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1097,
+                    469,
+                    135,
+                    246
+                ],
+                "segmentation_mask": "20230623112105_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    938,
+                    484,
+                    151,
+                    220
+                ],
+                "segmentation_mask": "20230623112105_0346.png"
+            },
+            {
+                "penguin_id": "0376",
+                "bbox": [
+                    768,
+                    508,
+                    122,
+                    196
+                ],
+                "segmentation_mask": "20230623112105_0376.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627121508",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "121508",
+            "set": "set4",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230627121029",
+            "white_image_id": "w20230627121119"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    1217,
+                    590,
+                    156,
+                    269
+                ],
+                "segmentation_mask": "20230627121508_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1491,
+                    641,
+                    167,
+                    210
+                ],
+                "segmentation_mask": "20230627121508_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1326,
+                    616,
+                    174,
+                    242
+                ],
+                "segmentation_mask": "20230627121508_0373.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1088,
+                    674,
+                    154,
+                    188
+                ],
+                "segmentation_mask": "20230627121508_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627115950",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "115950",
+            "set": "set3",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": null,
+            "white_image_id": null
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    913,
+                    810,
+                    317,
+                    205
+                ],
+                "segmentation_mask": "20230627115950_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    595,
+                    780,
+                    315,
+                    169
+                ],
+                "segmentation_mask": "20230627115950_1176.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    858,
+                    801,
+                    200,
+                    129
+                ],
+                "segmentation_mask": "20230627115950_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623131017",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "131017",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623130418",
+            "white_image_id": "w20230623130712"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    230,
+                    476,
+                    347,
+                    122
+                ],
+                "segmentation_mask": "20230623131017_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1441,
+                    495,
+                    163,
+                    120
+                ],
+                "segmentation_mask": "20230623131017_0166.png"
+            },
+            {
+                "penguin_id": "0343",
+                "bbox": [
+                    324,
+                    355,
+                    141,
+                    175
+                ],
+                "segmentation_mask": "20230623131017_0343.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    1172,
+                    484,
+                    218,
+                    123
+                ],
+                "segmentation_mask": "20230623131017_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623141937",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "141937",
+            "set": "set8",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623141026",
+            "white_image_id": "w20230623141059"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    742,
+                    649,
+                    249,
+                    137
+                ],
+                "segmentation_mask": "20230623141937_1147.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1107,
+                    655,
+                    232,
+                    290
+                ],
+                "segmentation_mask": "20230623141937_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623135017",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "135017",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623134801",
+            "white_image_id": "w20230623134802"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    422,
+                    484,
+                    228,
+                    218
+                ],
+                "segmentation_mask": "20230623135017_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1424,
+                    457,
+                    147,
+                    247
+                ],
+                "segmentation_mask": "20230623135017_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1021,
+                    455,
+                    168,
+                    242
+                ],
+                "segmentation_mask": "20230623135017_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1484,
+                    488,
+                    118,
+                    209
+                ],
+                "segmentation_mask": "20230623135017_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623144503",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "144503",
+            "set": "set10",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623143949",
+            "white_image_id": "w20230623144126"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    858,
+                    481,
+                    209,
+                    258
+                ],
+                "segmentation_mask": "20230623144503_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    624,
+                    506,
+                    170,
+                    227
+                ],
+                "segmentation_mask": "20230623144503_0346.png"
+            },
+            {
+                "penguin_id": "0553",
+                "bbox": [
+                    1095,
+                    497,
+                    199,
+                    278
+                ],
+                "segmentation_mask": "20230623144503_0553.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627110539",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "110539",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    1063,
+                    569,
+                    163,
+                    247
+                ],
+                "segmentation_mask": "20230627110539_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1330,
+                    536,
+                    158,
+                    287
+                ],
+                "segmentation_mask": "20230627110539_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623143628",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "143628",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623142527",
+            "white_image_id": "w20230623142621"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    884,
+                    444,
+                    133,
+                    220
+                ],
+                "segmentation_mask": "20230623143628_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    943,
+                    470,
+                    174,
+                    200
+                ],
+                "segmentation_mask": "20230623143628_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623131332",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "131332",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623130418",
+            "white_image_id": "w20230623130712"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    352,
+                    489,
+                    332,
+                    132
+                ],
+                "segmentation_mask": "20230623131332_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1511,
+                    508,
+                    170,
+                    120
+                ],
+                "segmentation_mask": "20230623131332_0166.png"
+            },
+            {
+                "penguin_id": "0343",
+                "bbox": [
+                    421,
+                    422,
+                    156,
+                    130
+                ],
+                "segmentation_mask": "20230623131332_0343.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    1262,
+                    493,
+                    232,
+                    135
+                ],
+                "segmentation_mask": "20230623131332_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627132945",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "132945",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627132506",
+            "white_image_id": "w20230627132304"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    577,
+                    406,
+                    189,
+                    311
+                ],
+                "segmentation_mask": "20230627132945_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1044,
+                    600,
+                    368,
+                    202
+                ],
+                "segmentation_mask": "20230627132945_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    441,
+                    446,
+                    272,
+                    122
+                ],
+                "segmentation_mask": "20230627132945_1147.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    417,
+                    534,
+                    231,
+                    129
+                ],
+                "segmentation_mask": "20230627132945_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627142005",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "142005",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1589,
+                    417,
+                    151,
+                    231
+                ],
+                "segmentation_mask": "20230627142005_0133.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    1297,
+                    374,
+                    185,
+                    276
+                ],
+                "segmentation_mask": "20230627142005_0146.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    613,
+                    439,
+                    174,
+                    202
+                ],
+                "segmentation_mask": "20230627142005_0346.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1688,
+                    404,
+                    126,
+                    244
+                ],
+                "segmentation_mask": "20230627142005_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627145606",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "145606",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    573,
+                    534,
+                    144,
+                    236
+                ],
+                "segmentation_mask": "20230627145606_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    902,
+                    514,
+                    148,
+                    258
+                ],
+                "segmentation_mask": "20230627145606_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    698,
+                    552,
+                    136,
+                    220
+                ],
+                "segmentation_mask": "20230627145606_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623103914",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "103914",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623101644",
+            "white_image_id": "w20230623101842"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    885,
+                    290,
+                    217,
+                    344
+                ],
+                "segmentation_mask": "20230623103914_0143.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    219,
+                    312,
+                    202,
+                    305
+                ],
+                "segmentation_mask": "20230623103914_0166.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1236,
+                    315,
+                    206,
+                    309
+                ],
+                "segmentation_mask": "20230623103914_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1062,
+                    377,
+                    188,
+                    264
+                ],
+                "segmentation_mask": "20230623103914_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627135046",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "135046",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627134528",
+            "white_image_id": "w20230627134449"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    773,
+                    412,
+                    182,
+                    273
+                ],
+                "segmentation_mask": "20230627135046_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1456,
+                    484,
+                    185,
+                    211
+                ],
+                "segmentation_mask": "20230627135046_0143.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1,
+                    489,
+                    139,
+                    220
+                ],
+                "segmentation_mask": "20230627135046_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    64,
+                    512,
+                    213,
+                    192
+                ],
+                "segmentation_mask": "20230627135046_0346.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1227,
+                    422,
+                    161,
+                    273
+                ],
+                "segmentation_mask": "20230627135046_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    467,
+                    460,
+                    175,
+                    221
+                ],
+                "segmentation_mask": "20230627135046_0456.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    980,
+                    443,
+                    147,
+                    246
+                ],
+                "segmentation_mask": "20230627135046_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623144436",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "144436",
+            "set": "set10",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623143949",
+            "white_image_id": "w20230623144126"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    876,
+                    468,
+                    191,
+                    267
+                ],
+                "segmentation_mask": "20230623144436_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    651,
+                    546,
+                    151,
+                    192
+                ],
+                "segmentation_mask": "20230623144436_0346.png"
+            },
+            {
+                "penguin_id": "0553",
+                "bbox": [
+                    1088,
+                    488,
+                    213,
+                    287
+                ],
+                "segmentation_mask": "20230623144436_0553.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623130851",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "130851",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623130418",
+            "white_image_id": "w20230623130712"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    285,
+                    479,
+                    323,
+                    125
+                ],
+                "segmentation_mask": "20230623130851_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1413,
+                    428,
+                    215,
+                    190
+                ],
+                "segmentation_mask": "20230623130851_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    1219,
+                    488,
+                    196,
+                    127
+                ],
+                "segmentation_mask": "20230623130851_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623105016",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "105016",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623104622",
+            "white_image_id": "w20230623104738"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1100,
+                    527,
+                    188,
+                    254
+                ],
+                "segmentation_mask": "20230623105016_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627145749",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "145749",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    1148,
+                    653,
+                    139,
+                    202
+                ],
+                "segmentation_mask": "20230627145749_0126.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1049,
+                    645,
+                    125,
+                    210
+                ],
+                "segmentation_mask": "20230627145749_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627115531",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "115531",
+            "set": "set3",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627113721",
+            "white_image_id": "w20230627113850"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1154,
+                    656,
+                    154,
+                    152
+                ],
+                "segmentation_mask": "20230627115531_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1267,
+                    446,
+                    181,
+                    251
+                ],
+                "segmentation_mask": "20230627115531_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    768,
+                    693,
+                    231,
+                    110
+                ],
+                "segmentation_mask": "20230627115531_1176.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1017,
+                    663,
+                    141,
+                    116
+                ],
+                "segmentation_mask": "20230627115531_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141224",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141224",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1110,
+                    480,
+                    136,
+                    227
+                ],
+                "segmentation_mask": "20230627141224_0133.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1419,
+                    458,
+                    155,
+                    254
+                ],
+                "segmentation_mask": "20230627141224_0143.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    874,
+                    430,
+                    147,
+                    278
+                ],
+                "segmentation_mask": "20230627141224_0146.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627133710",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "133710",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627132506",
+            "white_image_id": "w20230627132304"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    320,
+                    608,
+                    183,
+                    276
+                ],
+                "segmentation_mask": "20230627133710_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    839,
+                    695,
+                    322,
+                    195
+                ],
+                "segmentation_mask": "20230627133710_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    117,
+                    737,
+                    183,
+                    145
+                ],
+                "segmentation_mask": "20230627133710_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627105609",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "105609",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    1068,
+                    495,
+                    191,
+                    239
+                ],
+                "segmentation_mask": "20230627105609_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1206,
+                    490,
+                    159,
+                    235
+                ],
+                "segmentation_mask": "20230627105609_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    254,
+                    508,
+                    177,
+                    257
+                ],
+                "segmentation_mask": "20230627105609_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627145958",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "145958",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    1004,
+                    484,
+                    158,
+                    158
+                ],
+                "segmentation_mask": "20230627145958_0126.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    885,
+                    418,
+                    155,
+                    231
+                ],
+                "segmentation_mask": "20230627145958_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623113716",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "113716",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623113235",
+            "white_image_id": "w20230623113321"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    610,
+                    440,
+                    187,
+                    271
+                ],
+                "segmentation_mask": "20230623113716_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1098,
+                    495,
+                    206,
+                    252
+                ],
+                "segmentation_mask": "20230623113716_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141029",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141029",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    207,
+                    463,
+                    184,
+                    258
+                ],
+                "segmentation_mask": "20230627141029_0346.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627120211",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "120211",
+            "set": "set3",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": null,
+            "white_image_id": null
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    960,
+                    743,
+                    313,
+                    203
+                ],
+                "segmentation_mask": "20230627120211_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    624,
+                    710,
+                    295,
+                    123
+                ],
+                "segmentation_mask": "20230627120211_1176.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    892,
+                    741,
+                    210,
+                    126
+                ],
+                "segmentation_mask": "20230627120211_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623144336",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "144336",
+            "set": "set10",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623143949",
+            "white_image_id": "w20230623144126"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    804,
+                    468,
+                    178,
+                    261
+                ],
+                "segmentation_mask": "20230623144336_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    577,
+                    506,
+                    151,
+                    217
+                ],
+                "segmentation_mask": "20230623144336_0346.png"
+            },
+            {
+                "penguin_id": "0553",
+                "bbox": [
+                    1013,
+                    479,
+                    196,
+                    282
+                ],
+                "segmentation_mask": "20230623144336_0553.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627140140",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "140140",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    366,
+                    418,
+                    227,
+                    224
+                ],
+                "segmentation_mask": "20230627140140_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    227,
+                    353,
+                    184,
+                    287
+                ],
+                "segmentation_mask": "20230627140140_0346.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    935,
+                    386,
+                    218,
+                    236
+                ],
+                "segmentation_mask": "20230627140140_0356.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1602,
+                    351,
+                    178,
+                    273
+                ],
+                "segmentation_mask": "20230627140140_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623150743",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "150743",
+            "set": "set11",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623145416",
+            "white_image_id": "w20230623145532"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1022,
+                    501,
+                    222,
+                    371
+                ],
+                "segmentation_mask": "20230623150743_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    607,
+                    351,
+                    192,
+                    264
+                ],
+                "segmentation_mask": "20230623150743_1676.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623114552",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "114552",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623113235",
+            "white_image_id": "w20230623113321"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    816,
+                    519,
+                    201,
+                    233
+                ],
+                "segmentation_mask": "20230623114552_0143.png"
+            },
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    429,
+                    416,
+                    178,
+                    342
+                ],
+                "segmentation_mask": "20230623114552_0126.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    918,
+                    491,
+                    158,
+                    258
+                ],
+                "segmentation_mask": "20230623114552_0473.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1365,
+                    639,
+                    172,
+                    92
+                ],
+                "segmentation_mask": "20230623114552_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623150732",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "150732",
+            "set": "set11",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623145416",
+            "white_image_id": "w20230623145532"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    618,
+                    364,
+                    167,
+                    233
+                ],
+                "segmentation_mask": "20230623150732_1676.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627104556",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "104556",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0363",
+                "bbox": [
+                    994,
+                    513,
+                    167,
+                    267
+                ],
+                "segmentation_mask": "20230627104556_0363.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1494,
+                    530,
+                    189,
+                    233
+                ],
+                "segmentation_mask": "20230627104556_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    393,
+                    618,
+                    181,
+                    177
+                ],
+                "segmentation_mask": "20230627104556_0456.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1161,
+                    539,
+                    184,
+                    232
+                ],
+                "segmentation_mask": "20230627104556_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623112448",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "112448",
+            "set": "set4",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623111825",
+            "white_image_id": "w20230623111914"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1019,
+                    436,
+                    149,
+                    242
+                ],
+                "segmentation_mask": "20230623112448_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    832,
+                    505,
+                    196,
+                    168
+                ],
+                "segmentation_mask": "20230623112448_0346.png"
+            },
+            {
+                "penguin_id": "0376",
+                "bbox": [
+                    648,
+                    491,
+                    127,
+                    175
+                ],
+                "segmentation_mask": "20230623112448_0376.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627145930",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "145930",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    1011,
+                    400,
+                    166,
+                    238
+                ],
+                "segmentation_mask": "20230627145930_0126.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    889,
+                    418,
+                    155,
+                    227
+                ],
+                "segmentation_mask": "20230627145930_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627145429",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "145429",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    873,
+                    530,
+                    161,
+                    244
+                ],
+                "segmentation_mask": "20230627145429_0143.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    962,
+                    535,
+                    183,
+                    239
+                ],
+                "segmentation_mask": "20230627145429_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627114815",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "114815",
+            "set": "set3",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627113721",
+            "white_image_id": "w20230627113850"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    958,
+                    626,
+                    254,
+                    161
+                ],
+                "segmentation_mask": "20230627114815_1116.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    690,
+                    446,
+                    152,
+                    262
+                ],
+                "segmentation_mask": "20230627114815_1126.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    581,
+                    700,
+                    260,
+                    119
+                ],
+                "segmentation_mask": "20230627114815_1176.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    830,
+                    670,
+                    262,
+                    130
+                ],
+                "segmentation_mask": "20230627114815_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623135138",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "135138",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623134801",
+            "white_image_id": "w20230623134802"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    310,
+                    524,
+                    292,
+                    120
+                ],
+                "segmentation_mask": "20230623135138_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1276,
+                    409,
+                    160,
+                    240
+                ],
+                "segmentation_mask": "20230623135138_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    868,
+                    403,
+                    203,
+                    247
+                ],
+                "segmentation_mask": "20230623135138_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1374,
+                    426,
+                    146,
+                    227
+                ],
+                "segmentation_mask": "20230623135138_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627101728",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "101728",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627101149",
+            "white_image_id": "w20230627101305"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    945,
+                    688,
+                    200,
+                    244
+                ],
+                "segmentation_mask": "20230627101728_1176.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    691,
+                    744,
+                    184,
+                    185
+                ],
+                "segmentation_mask": "20230627101728_1556.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623133747",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "133747",
+            "set": "set6",
+            "weather": "cloudy",
+            "scanrate": "s30",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "33.21ms",
+            "black_image_id": "b20230623130418",
+            "white_image_id": "w20230623130712"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    321,
+                    522,
+                    273,
+                    113
+                ],
+                "segmentation_mask": "20230623133747_0146.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    1382,
+                    467,
+                    154,
+                    192
+                ],
+                "segmentation_mask": "20230623133747_0166.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    1212,
+                    402,
+                    166,
+                    283
+                ],
+                "segmentation_mask": "20230623133747_0356.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141627",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141627",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1150,
+                    509,
+                    116,
+                    220
+                ],
+                "segmentation_mask": "20230627141627_0133.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    808,
+                    457,
+                    144,
+                    269
+                ],
+                "segmentation_mask": "20230627141627_0146.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1071,
+                    490,
+                    129,
+                    235
+                ],
+                "segmentation_mask": "20230627141627_0566.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627140716",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "140716",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    839,
+                    414,
+                    169,
+                    293
+                ],
+                "segmentation_mask": "20230627140716_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1524,
+                    521,
+                    162,
+                    198
+                ],
+                "segmentation_mask": "20230627140716_0143.png"
+            },
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    0,
+                    441,
+                    196,
+                    283
+                ],
+                "segmentation_mask": "20230627140716_0166.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    713,
+                    415,
+                    176,
+                    293
+                ],
+                "segmentation_mask": "20230627140716_0373.png"
+            },
+            {
+                "penguin_id": "0456",
+                "bbox": [
+                    631,
+                    572,
+                    119,
+                    133
+                ],
+                "segmentation_mask": "20230627140716_0456.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627150251",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "150251",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1271,
+                    667,
+                    198,
+                    178
+                ],
+                "segmentation_mask": "20230627150251_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623140552",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "140552",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623134801",
+            "white_image_id": "w20230623134802"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    353,
+                    589,
+                    190,
+                    120
+                ],
+                "segmentation_mask": "20230623140552_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    940,
+                    627,
+                    153,
+                    108
+                ],
+                "segmentation_mask": "20230623140552_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    697,
+                    610,
+                    220,
+                    118
+                ],
+                "segmentation_mask": "20230623140552_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1148,
+                    512,
+                    173,
+                    233
+                ],
+                "segmentation_mask": "20230623140552_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627103644",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "103644",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    1132,
+                    542,
+                    180,
+                    247
+                ],
+                "segmentation_mask": "20230627103644_0126.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1545,
+                    513,
+                    176,
+                    257
+                ],
+                "segmentation_mask": "20230627103644_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627104813",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "104813",
+            "set": "set2",
+            "weather": "cloudy",
+            "scanrate": "s40",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "24.88ms",
+            "black_image_id": "b20230627102936",
+            "white_image_id": "w20230627103125"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    909,
+                    561,
+                    189,
+                    232
+                ],
+                "segmentation_mask": "20230627104813_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623113914",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "113914",
+            "set": "set5",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623113235",
+            "white_image_id": "w20230623113321"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    789,
+                    367,
+                    233,
+                    330
+                ],
+                "segmentation_mask": "20230623113914_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    384,
+                    409,
+                    178,
+                    258
+                ],
+                "segmentation_mask": "20230623113914_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623102959",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "102959",
+            "set": "set1",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623101644",
+            "white_image_id": "w20230623101842"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1090,
+                    331,
+                    188,
+                    268
+                ],
+                "segmentation_mask": "20230623102959_0373.png"
+            },
+            {
+                "penguin_id": "0477",
+                "bbox": [
+                    453,
+                    324,
+                    176,
+                    251
+                ],
+                "segmentation_mask": "20230623102959_0477.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623141447",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "141447",
+            "set": "set8",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623141026",
+            "white_image_id": "w20230623141059"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    921,
+                    570,
+                    166,
+                    282
+                ],
+                "segmentation_mask": "20230623141447_1556.png"
+            },
+            {
+                "penguin_id": "0000",
+                "bbox": [
+                    1043,
+                    474,
+                    223,
+                    258
+                ],
+                "segmentation_mask": "20230623141447_1676.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627145359",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "145359",
+            "set": "set9",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627145242",
+            "white_image_id": "w20230627145317"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    627,
+                    509,
+                    156,
+                    254
+                ],
+                "segmentation_mask": "20230627145359_0143.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    768,
+                    543,
+                    133,
+                    222
+                ],
+                "segmentation_mask": "20230627145359_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627140207",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "140207",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0166",
+                "bbox": [
+                    377,
+                    418,
+                    210,
+                    218
+                ],
+                "segmentation_mask": "20230627140207_0166.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    241,
+                    351,
+                    177,
+                    287
+                ],
+                "segmentation_mask": "20230627140207_0346.png"
+            },
+            {
+                "penguin_id": "0356",
+                "bbox": [
+                    964,
+                    346,
+                    162,
+                    269
+                ],
+                "segmentation_mask": "20230627140207_0356.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    1367,
+                    366,
+                    141,
+                    235
+                ],
+                "segmentation_mask": "20230627140207_0373.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230623135959",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230623",
+            "time": "135959",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s70",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "14.17ms",
+            "black_image_id": "b20230623134801",
+            "white_image_id": "w20230623134802"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0126",
+                "bbox": [
+                    130,
+                    519,
+                    326,
+                    129
+                ],
+                "segmentation_mask": "20230623135959_0126.png"
+            },
+            {
+                "penguin_id": "0143",
+                "bbox": [
+                    1014,
+                    407,
+                    165,
+                    232
+                ],
+                "segmentation_mask": "20230623135959_0143.png"
+            },
+            {
+                "penguin_id": "0373",
+                "bbox": [
+                    624,
+                    522,
+                    163,
+                    116
+                ],
+                "segmentation_mask": "20230623135959_0373.png"
+            },
+            {
+                "penguin_id": "0473",
+                "bbox": [
+                    1116,
+                    465,
+                    146,
+                    182
+                ],
+                "segmentation_mask": "20230623135959_0473.png"
+            }
+        ]
+    },
+    {
+        "image_id": "20230627141851",
+        "meta_data": {
+            "height": 1080,
+            "width": 2048,
+            "band": 151,
+            "date": "20230627",
+            "time": "141851",
+            "set": "set7",
+            "weather": "cloudy",
+            "scanrate": "s100",
+            "gain": "g50",
+            "skip_line": "3",
+            "exposure_time": "9.88ms",
+            "black_image_id": "b20230627135941",
+            "white_image_id": "w20230627140042"
+        },
+        "annotation": [
+            {
+                "penguin_id": "0133",
+                "bbox": [
+                    1261,
+                    558,
+                    152,
+                    210
+                ],
+                "segmentation_mask": "20230627141851_0133.png"
+            },
+            {
+                "penguin_id": "0146",
+                "bbox": [
+                    1002,
+                    524,
+                    145,
+                    244
+                ],
+                "segmentation_mask": "20230627141851_0146.png"
+            },
+            {
+                "penguin_id": "0346",
+                "bbox": [
+                    406,
+                    531,
+                    191,
+                    233
+                ],
+                "segmentation_mask": "20230627141851_0346.png"
+            },
+            {
+                "penguin_id": "0566",
+                "bbox": [
+                    1367,
+                    534,
+                    121,
+                    239
+                ],
+                "segmentation_mask": "20230627141851_0566.png"
+            }
+        ]
+    }
+]
