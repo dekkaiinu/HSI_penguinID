@@ -1,7 +1,6 @@
+import os
 import numpy as np
-
-from gamma import gamma
-from tone_curve import toneCurve1, sToneCurve
+import cv2
 
 def hs2rgb(hsi: np.ndarray):
     hsi = hsi / 4095
@@ -9,7 +8,10 @@ def hs2rgb(hsi: np.ndarray):
     
     height, width = hsi.shape[0], hsi.shape[1]
 
-    color_matching_function = np.loadtxt('./cfm.csv', delimiter=',')
+    # hs2rgb.pyと同じディレクトリにあるcfm.csvを読み込む
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    cfm_path = os.path.join(script_dir, 'cfm.csv')
+    color_matching_function = np.loadtxt(cfm_path, delimiter=',')
     color_matching_function = color_matching_function[::5]
 
     wave_length = np.arange(350, 1100 + 1, 5)
@@ -37,3 +39,25 @@ def hs2rgb(hsi: np.ndarray):
     img_rgb = toneCurve1(img_rgb, n=2)
     img_rgb = sToneCurve(img_rgb)
     return img_rgb
+
+def gamma(img_rgb):
+    img_rgb = img_rgb.astype(np.float32) / np.max(img_rgb)
+    img_rgb = img_rgb ** (1.0 / 2.2)
+    img_rgb = img_rgb * 255
+    img_rgb = img_rgb.astype(np.uint8)
+    return img_rgb
+
+def toneCurve1(frame, n = 1):
+    look_up_table = np.zeros((256,1), dtype = 'uint8')
+    for i in range(256):
+        if i < 256 / n:
+            look_up_table[i][0] = i * n
+        else:
+            look_up_table[i][0] = 255
+    return cv2.LUT(frame, look_up_table)
+
+def sToneCurve(frame):
+    look_up_table = np.zeros((256,1), dtype = 'uint8')
+    for i in range(256):
+        look_up_table[i][0] = 255 * (np.sin(np.pi * (i/255 - 1/2)) + 1) / 2
+    return cv2.LUT(frame, look_up_table)

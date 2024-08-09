@@ -3,7 +3,6 @@ import numpy as np
 def calc_penguin_id(predict_scores):
     scores = []
     ranks = []
-
     for predict_score in predict_scores:
         pred_id = np.argmax(predict_score, axis=1)
         

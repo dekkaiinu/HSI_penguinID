@@ -19,6 +19,7 @@ hsitools = {git = "https://github.com/dekkaiinu/hsitools"}
 datasets = "^2.19.1"
 h5py = "^3.11.0"
 notebook = "^7.2.1"
+yolov5 = "^7.0.13"
 
 [build-system]
 requires = ["poetry-core"]

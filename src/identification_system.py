@@ -27,16 +27,26 @@ def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identi
 
 
 if __name__ == "__main__":
+    import h5py
     from detect.yolov5.models.common import DetectMultiBackend
     from identify.pixel_wise_mlp.models.MLP_BatchNorm import MLP_BatchNorm
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    detect_model = DetectMultiBackend("yolov5/weights/penguin_detection.pt", device=device, dnn=False, data="yolov5/data/penguin_detection.yaml", fp16=True)
+    detect_model = DetectMultiBackend("/mnt/hdd1/youta/ws/HSI_penguinID/src/detect/yolov5/runs/train/exp3/weights/best.pt", device=device, dnn=False, data="yolov5/data/penguin_detection.yaml", fp16=True)
     
     identify_model = MLP_BatchNorm(input_dim=151, output_dim=16)
     identify_model.to(device)
 
     identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-02-21/18-49/weight.pt'))
 
-    identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device)
+    # hdf5ファイルからhsデータを読み込む
+    hdf5_path = '/mnt/hdd3/datasets/hyper_penguin/hyper_penguin/hyper_penguin.h5'
+    with h5py.File(hdf5_path, 'r') as file:
+        # 特定の画像IDを指定する必要がある．ここでは例として'20230623114016'を使用
+        image_id = '20230627114441'
+        hsi = file[f'hsi/{image_id}.npy'][:]
+    print(hsi.shape)
+
+    predict_id = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device)
+    print(predict_id)
