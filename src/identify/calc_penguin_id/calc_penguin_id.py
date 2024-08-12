@@ -34,4 +34,4 @@ def calc_penguin_id(predict_scores):
 
     ids_str = list(map(str, pred_ids))
 
-    return ids_str
+    return ids_str, pred_scores.tolist()

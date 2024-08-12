@@ -13,6 +13,4 @@ def output_metric(tar, pre):
         sum += np.sum(matrix[i, :]) * np.sum(matrix[:, i])
     OA = number / np.sum(matrix)
     AA_mean = np.mean(AA)
-    pe = sum / (np.sum(matrix) ** 2)
-    Kappa = (OA - pe) / (1 - pe)
-    return OA, AA_mean, Kappa, AA
+    return OA, AA_mean, AA

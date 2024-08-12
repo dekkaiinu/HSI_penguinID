@@ -21,15 +21,15 @@ def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identi
         pred_score = pixel_wise_mlp(hs_pixel, identify_model, device)
         predict_scores.append(pred_score)
 
-    preds = calc_penguin_id(predict_scores)
+    preds, vote_rates = calc_penguin_id(predict_scores)
 
-    return preds
+    return preds, pred_bboxs, vote_rates
 
 
 if __name__ == "__main__":
     import h5py
     from detect.yolov5.models.common import DetectMultiBackend
-    from identify.pixel_wise_mlp.models.MLP_BatchNorm import MLP_BatchNorm
+    from identify.pixel_wise_mlp.models.mlp_batch_norm import MLP_BatchNorm
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

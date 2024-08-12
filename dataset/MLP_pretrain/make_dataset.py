@@ -32,6 +32,11 @@ def make_dataset(dataset_dir, dataset_info, save_dir):
 
                 mask = file[f'seg_mask/{annotation["segmentation_mask"]}'][:]
                 hs_pixels = extract_pixels_from_hsi_mask(hsi, mask)
+
+                np.random.seed(42)
+                num_samples = len(hs_pixels) // 5
+                indices = np.random.choice(len(hs_pixels), num_samples, replace=False)
+                hs_pixels = [hs_pixels[i] for i in indices]
                 
                 data_writer.writerows(hs_pixels)
                 penguin_id = target_id_list.index(penguin_id)
