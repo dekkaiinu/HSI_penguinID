@@ -3,3 +3,6 @@
 *.npz
 *.txt
 *.csv
+
+*/outputs
+*/runs
