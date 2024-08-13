@@ -50,7 +50,7 @@ def write_gt_format_data(annotation, save_path, width=2048, height=1080):
                 file.write(text + "\n")
 
 if __name__ == "__main__":
-    detect_path = "/mnt/hdd1/youta/ws/HSI_penguinID/src/detect/yolov5/runs/train/exp3/weights/best.pt"
+    detect_path = "yolov5/runs/train/exp5/weights/best.pt"
     identify_path = "/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-02-21/18-49/weight.pt"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

@@ -22,6 +22,8 @@ def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identi
         predict_scores.append(pred_score)
 
     preds, vote_rates = calc_penguin_id(predict_scores)
+    print(preds)
+    print(vote_rates)
 
     return preds, pred_bboxs, vote_rates
 
@@ -33,18 +35,18 @@ if __name__ == "__main__":
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    detect_model = DetectMultiBackend("/mnt/hdd1/youta/ws/HSI_penguinID/src/detect/yolov5/runs/train/exp3/weights/best.pt", device=device, dnn=False, data="yolov5/data/penguin_detection.yaml", fp16=True)
+    detect_model = DetectMultiBackend("detect/yolov5/runs/train/exp5/weights/best.pt", device=device, dnn=False, data="/mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset/penguin_id_yolo.yaml", fp16=True)
     
     identify_model = MLP_BatchNorm(input_dim=151, output_dim=16)
     identify_model.to(device)
 
-    identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-02-21/18-49/weight.pt'))
+    identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-08-13/11-22/weight.pt'))
 
     # hdf5ファイルからhsデータを読み込む
     hdf5_path = '/mnt/hdd3/datasets/hyper_penguin/hyper_penguin/hyper_penguin.h5'
     with h5py.File(hdf5_path, 'r') as file:
         # 特定の画像IDを指定する必要がある．ここでは例として'20230623114016'を使用
-        image_id = '20230627114441'
+        image_id = '20230623104020'
         hsi = file[f'hsi/{image_id}.npy'][:]
     print(hsi.shape)
 

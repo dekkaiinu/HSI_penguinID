@@ -36,8 +36,6 @@ def hs2rgb(hsi: np.ndarray):
     img_rgb = np.dot(img_xyz, M.T)
 
     img_rgb = gamma(img_rgb)
-    img_rgb = toneCurve1(img_rgb, n=2)
-    img_rgb = sToneCurve(img_rgb)
     return img_rgb
 
 def gamma(img_rgb):
