@@ -8,8 +8,11 @@ from identify.extract_pixels.extract_pixels import extract_pixels
 from identify.pixel_wise_mlp.pixel_wise_mlp import pixel_wise_mlp
 from identify.calc_penguin_id.calc_penguin_id import calc_penguin_id
 
-def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identify_model: torch.nn.Module, device: torch.device):
-    rgb = hs2rgb(hsi)
+def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identify_model: torch.nn.Module, device: torch.device, rgb: np.ndarray = None):
+    if rgb is None:
+        rgb = hs2rgb(hsi)
+    else:
+        rgb = rgb
 
     pred_bboxs = detector(rgb, device, detect_model, stride=detect_model.stride, conf_thres=0.45, iou_thres=0.25, classes=None, resize=640)
 
@@ -22,8 +25,6 @@ def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identi
         predict_scores.append(pred_score)
 
     preds, vote_rates = calc_penguin_id(predict_scores)
-    print(preds)
-    print(vote_rates)
 
     return preds, pred_bboxs, vote_rates
 

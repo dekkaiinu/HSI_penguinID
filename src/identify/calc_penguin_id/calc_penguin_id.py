@@ -5,10 +5,8 @@ def calc_penguin_id(predict_scores):
     ranks = []
     for predict_score in predict_scores:
         pred_id = np.argmax(predict_score, axis=1)
-        
         label_counts = np.bincount(pred_id, minlength=predict_score.shape[1])
         score = label_counts / len(pred_id)
-        
         scores.append(score)
         ranks.append(np.argsort(score)[::-1])
 

@@ -1,6 +1,7 @@
 import json
 import random
 
+
 def split_dataset(dataset_info_path, random_seed=0, train_rate=0.8):
     with open(dataset_info_path, 'r') as f:
         dataset_info = json.load(f)
@@ -31,6 +32,7 @@ def split_dataset(dataset_info_path, random_seed=0, train_rate=0.8):
         json.dump(test_dataset, f, indent=4)
     return None
 
+
 def pick_dataset(dataset_info):
     target_id_list = ['0373', '0143', '0346', '0166', '0566', '0126', '0473', '0456', '0146', '0356', '0363', '0133', '0553', '0376', '0343', '0477']
     new_dataset_info = []
@@ -39,6 +41,8 @@ def pick_dataset(dataset_info):
         if date == '20230623' or date == '20230627':
             new_annotation = []
             for annotation in data_info['annotation']:
+                if int(annotation['penguin_id']) >= 1000:
+                    continue
                 if annotation['penguin_id'] in target_id_list:
                     new_annotation.append(annotation)
                 else:

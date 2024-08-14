@@ -35,6 +35,8 @@ def hs2rgb(hsi: np.ndarray):
 
     img_rgb = np.dot(img_xyz, M.T)
 
+    img_rgb = (img_rgb - np.min(img_rgb)) / (np.max(img_rgb) - np.min(img_rgb)) * 255
+
     img_rgb = gamma(img_rgb)
     return img_rgb
 
