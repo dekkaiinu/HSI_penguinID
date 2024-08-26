@@ -2,8 +2,8 @@ from omegaconf import DictConfig, OmegaConf
 import hydra
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
-from datasets import load_dataset
+from torch.utils.data import DataLoader, WeightedRandomSampler
+import numpy as np
 
 from hspix_dataset import HsPixelDataset
 
@@ -15,7 +15,15 @@ from utils.create_runs_folder import *
 @hydra.main(version_base=None, config_path='cfg', config_name='config')
 def train(cfg: DictConfig):
     training_dataset = HsPixelDataset(feature_path=cfg.train.feature, target_path=cfg.train.target)
-    training_dataset = DataLoader(training_dataset, batch_size=cfg.batch_size, shuffle=True, num_workers=4, pin_memory=True, prefetch_factor=2)
+
+    class_sample_count = np.array([len(np.where(training_dataset.target == t)[0]) for t in np.unique(training_dataset.target)])
+    weight = 1. / class_sample_count
+    samples_weight = np.array([weight[t] for t in training_dataset.target])
+    
+    samples_weight = torch.from_numpy(samples_weight)
+    sampler = WeightedRandomSampler(samples_weight.type('torch.DoubleTensor'), len(samples_weight))
+    
+    training_dataset = DataLoader(training_dataset, batch_size=cfg.batch_size, sampler=sampler, num_workers=4, pin_memory=True, prefetch_factor=2)
 
     validation_dataset = HsPixelDataset(feature_path=cfg.validation.feature, target_path=cfg.validation.target)
     validation_dataset = DataLoader(validation_dataset, batch_size=cfg.batch_size, shuffle=True, num_workers=4, pin_memory=True, prefetch_factor=2)

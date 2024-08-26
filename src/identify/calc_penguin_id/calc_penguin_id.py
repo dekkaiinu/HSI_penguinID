@@ -30,6 +30,6 @@ def calc_penguin_id(predict_scores):
 
     pred_ids = decision_labels.tolist()
 
-    ids_str = list(map(str, pred_ids))
+    # ids_str = list(map(str, pred_ids))
 
-    return ids_str, pred_scores.tolist()
+    return pred_ids, pred_scores.tolist()

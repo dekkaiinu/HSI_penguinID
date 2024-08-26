@@ -8,7 +8,7 @@ from typing import List
 
 def plot_rectangle(image: np.ndarray,
                         bboxes_list: List[np.ndarray],
-                        labels: List[str] = None,
+                        labels: List[int] = None,
                         label_size: int = 7,
                         line_width: int = 1,
                         border_color=(0, 1, 0, 1)) -> None:
@@ -23,6 +23,7 @@ def plot_rectangle(image: np.ndarray,
         line_width: 矩形線の太さ（デフォルト:1）
         border_color: 矩形線のカラー（デフォルト:緑）
     """
+    
     # Display the image
     fig, ax = plt.subplots()
     ax.imshow(image)
@@ -32,6 +33,7 @@ def plot_rectangle(image: np.ndarray,
 
     for bbox, label in zip(bboxes_list, labels):
         # Add bounding box
+        label = str(label)
         x1 = int(bbox[0] * image.shape[1])
         x2 = int(bbox[2] * image.shape[1])
         y1 = int(bbox[1] * image.shape[0])
@@ -53,9 +55,9 @@ def plot_rectangle(image: np.ndarray,
                     size=label_size, bbox=bbox_props)
     ax.axis('off')
 
-    buf = io.BytesIO()
+    buf = io.BytesIO() # bufferを用意
     plt.savefig(buf, dpi=200, bbox_inches='tight', pad_inches=0, transparent=True)
-    enc = np.frombuffer(buf.getvalue(), dtype=np.uint8)
-    ploted_img = cv2.imdecode(enc, 1)
+    enc = np.frombuffer(buf.getvalue(), dtype=np.uint8) # bufferからの読み出し
+    ploted_img = cv2.imdecode(enc, 1) # デコード
     plt.clf()
     return ploted_img

@@ -1,15 +1,16 @@
 import os
+import cv2
 import json
 import h5py
 import torch
 from tqdm import tqdm
 import numpy as np
 from collections import defaultdict
-from sklearn.metrics import average_precision_score
 
 from detect.yolov5.models.common import DetectMultiBackend
 from identify.pixel_wise_mlp.models.mlp_batch_norm import MLP_BatchNorm
 from identification_system import identification_system
+from plot_rectangle import plot_rectangle
 
 def evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, save_path, device):
     detect_model = DetectMultiBackend(detect_path, device=device, dnn=False, data=detect_yaml, fp16=True)
@@ -26,14 +27,22 @@ def evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, s
     ground_truths = defaultdict(list)
 
     for data in tqdm(data_info):
+        height = data['meta_data']['height']
+        width = data['meta_data']['width']
         target_id_list = ['0373', '0143', '0346', '0166', '0566', '0126', '0473', '0456', '0146', '0356', '0363', '0133', '0553', '0376', '0343', '0477']
         flag = False
+        gt_ids = []
+        gt_bboxs = []
         for ann in data['annotation']:
             if ann['penguin_id'] == '0000':
                 continue
             id = target_id_list.index(ann['penguin_id'])
             gt_bbox = [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]
             ground_truths[id].append(gt_bbox)
+
+            gt_bbox = [ann['bbox'][0] / width, ann['bbox'][1] / height, (ann['bbox'][0] + ann['bbox'][2]) / width, (ann['bbox'][1] + ann['bbox'][3]) / height]
+            gt_ids.append(id)
+            gt_bboxs.append(gt_bbox)
             flag = True
         if not flag:
             continue
@@ -42,11 +51,16 @@ def evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, s
         hsi = h5py.File(dataset_path, 'r')[f'hsi/{image_id}.npy'][:]
         rgb = h5py.File(dataset_path, 'r')[f'rgb/{image_id}.png'][:]
         preds, pred_bboxs, vote_rates = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device, rgb=rgb)
+  
         # write_detect_format_data(preds, pred_bboxs, vote_rates, os.path.join(pred_path, f'{image_id}.txt'))
         # write_gt_format_data(data['annotation'], os.path.join(gt_path, f'{image_id}.txt'))
         for pred_id, pred_bbox, confidence in zip(preds, pred_bboxs, vote_rates):
             pred_bbox = [confidence, int(pred_bbox[0] * hsi.shape[1]), int(pred_bbox[1] * hsi.shape[0]), int(pred_bbox[2] * hsi.shape[1]), int(pred_bbox[3] * hsi.shape[0])]
-            predictions[int(pred_id)].append(pred_bbox)
+            predictions[pred_id].append(pred_bbox)
+        pred_img = plot_rectangle(cv2.cvtColor(rgb.astype(np.uint8), cv2.COLOR_RGB2BGR), pred_bboxs, preds, border_color='cyan', label_size=13, line_width=2)
+        tar_img = plot_rectangle(cv2.cvtColor(rgb.astype(np.uint8), cv2.COLOR_RGB2BGR), gt_bboxs, gt_ids, border_color='red', label_size=13, line_width=2)
+        cv2.imwrite(os.path.join(save_path, f'{image_id}_pred.png'), pred_img)
+        cv2.imwrite(os.path.join(save_path, f'{image_id}_tar.png'), tar_img)
     
     # 評価の実行
     mAP, aps = calculate_ap(predictions, ground_truths, len(target_id_list))
@@ -71,14 +85,15 @@ def calculate_ap(predictions, ground_truths, class_num):
         
         pred = np.array(predictions[class_id])
         gt = np.array(ground_truths[class_id])
-        
+        print(pred)
+        print(gt)
         if len(pred) == 0 or len(gt) == 0:
             aps.append(0)
             continue
         
         # 信頼度でソート
         pred = pred[pred[:, 0].argsort()[::-1]]
-        
+
         tp = np.zeros(len(pred))
         fp = np.zeros(len(pred))
         gt_matched = np.zeros(len(gt), dtype=bool)
@@ -165,12 +180,12 @@ def write_gt_format_data(annotation, save_path, width=2048, height=1080):
 if __name__ == "__main__":
     detect_path = "detect/yolov5/runs/train/exp5/weights/best.pt"
     detect_yaml = "/mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset/penguin_id_yolo.yaml"
-    identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-08-13/11-22/weight.pt'
+    identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-08-15/13-22/weight.pt'
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     dataset_path ='/mnt/hdd3/datasets/hyper_penguin/hyper_penguin/hyper_penguin.h5'
     with open('/mnt/hdd1/youta/ws/HSI_penguinID/dataset/test_dataset_info.json', 'r') as f:
         data_info = json.load(f)
-    save_path = '.'
+    save_path = './result/'
 
     evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, save_path, device)

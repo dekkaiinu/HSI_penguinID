@@ -24,9 +24,9 @@ def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identi
         pred_score = pixel_wise_mlp(hs_pixel, identify_model, device)
         predict_scores.append(pred_score)
 
-    preds, vote_rates = calc_penguin_id(predict_scores)
+    pred_ids, vote_rates = calc_penguin_id(predict_scores)
 
-    return preds, pred_bboxs, vote_rates
+    return pred_ids, pred_bboxs, vote_rates
 
 
 if __name__ == "__main__":
