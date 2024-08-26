@@ -1,0 +1,11 @@
+*.png
+*.npy
+*.npz
+*.txt
+*.csv
+
+*/outputs
+*/runs
+poetry.lock
+
+resize_dataset.py

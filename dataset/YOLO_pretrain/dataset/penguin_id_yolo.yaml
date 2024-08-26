@@ -1,0 +1,9 @@
+# データセットの定義
+path: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset
+train: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset/train
+val: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset/val
+test: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset/test
+
+# クラスの定義
+nc: 1  # クラスの数
+names: ['penguin']  # クラス名のリスト
