@@ -1,17 +1,8 @@
 import numpy as np
 
 def calc_penguin_id(predict_scores):
-    scores = []
-    ranks = []
-    for predict_score in predict_scores:
-        pred_id = np.argmax(predict_score, axis=1)
-        label_counts = np.bincount(pred_id, minlength=predict_score.shape[1])
-        score = label_counts / len(pred_id)
-        scores.append(score)
-        ranks.append(np.argsort(score)[::-1])
-
-    scores = np.array(scores)
-    ranks = np.array(ranks)
+    scores = np.array(predict_scores)
+    ranks = np.argsort(-scores, axis=1)
 
     decision_labels = np.zeros_like(ranks[:, 0])
     pred_scores = np.zeros_like(scores[:, 0])
@@ -29,7 +20,5 @@ def calc_penguin_id(predict_scores):
     decision_labels = decision_labels - 1
 
     pred_ids = decision_labels.tolist()
-
-    # ids_str = list(map(str, pred_ids))
 
     return pred_ids, pred_scores.tolist()

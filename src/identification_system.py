@@ -4,9 +4,11 @@ import torch
 from detect.hs2rgb.hs2rgb import hs2rgb
 from detect.detector import detector
 
-from identify.extract_pixels.extract_pixels import extract_pixels
-from identify.pixel_wise_mlp.pixel_wise_mlp import pixel_wise_mlp
+from identify.crop_patch.crop_patch import crop_patch
+from identify.weight_mask.weight_mask import weight_mask
+from identify.predict_score.predict_score import GetScoreModule
 from identify.calc_penguin_id.calc_penguin_id import calc_penguin_id
+
 
 def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identify_model: torch.nn.Module, device: torch.device, rgb: np.ndarray = None):
     if rgb is None:
@@ -16,32 +18,42 @@ def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identi
 
     pred_bboxs = detector(rgb, device, detect_model, stride=detect_model.stride, conf_thres=0.45, iou_thres=0.25, classes=None, resize=640)
 
-    hs_pixels = extract_pixels(hsi, pred_bboxs)
+    get_score_module = GetScoreModule(identify_model)
+    get_score_module.to(device)
+    get_score_module.eval()
 
-    predict_scores = []
-    for hs_pixel in hs_pixels:
-        hs_pixel = hs_pixel / 4095
-        pred_score = pixel_wise_mlp(hs_pixel, identify_model, device)
-        predict_scores.append(pred_score)
+    preds = []
+    for pred_bbox in pred_bboxs:
+        croped_patch = crop_patch(hsi, pred_bbox, crop_size=64)
 
-    pred_ids, vote_rates = calc_penguin_id(predict_scores)
+        mask = weight_mask(croped_patch)
+        mask = torch.from_numpy(mask).float().unsqueeze(0)
+        mask = mask.to(device)
 
-    return pred_ids, pred_bboxs, vote_rates
+        input = torch.from_numpy(croped_patch).type(torch.FloatTensor).permute(2, 0, 1).unsqueeze(0)
+        input = input.to(device)
+
+        pred = get_score_module(input, mask)
+        pred = pred.data.cpu().numpy().squeeze()
+        preds.append(pred)
+    pred_ids, scores = calc_penguin_id(preds)
+
+    return pred_ids, pred_bboxs, scores
 
 
 if __name__ == "__main__":
     import h5py
     from detect.yolov5.models.common import DetectMultiBackend
-    from identify.pixel_wise_mlp.models.mlp_batch_norm import MLP_BatchNorm
+    from identify.predict_score.models.pix_wise_cnn import PointWiseCNN
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     detect_model = DetectMultiBackend("detect/yolov5/runs/train/exp5/weights/best.pt", device=device, dnn=False, data="/mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset/penguin_id_yolo.yaml", fp16=True)
     
-    identify_model = MLP_BatchNorm(input_dim=151, output_dim=16)
+    identify_model = PointWiseCNN(input_channels=151, output_channels=16, dropout_prob=0.5)
     identify_model.to(device)
 
-    identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-08-13/11-22/weight.pt'))
+    # identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-08-13/11-22/weight.pt'))
 
     # hdf5ファイルからhsデータを読み込む
     hdf5_path = '/mnt/hdd3/datasets/hyper_penguin/hyper_penguin/hyper_penguin.h5'
@@ -51,5 +63,7 @@ if __name__ == "__main__":
         hsi = file[f'hsi/{image_id}.npy'][:]
     print(hsi.shape)
 
-    predict_id = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device)
-    print(predict_id)
+    predict_ids, pred_bboxs, scores = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device)
+    print('predict_ids:', predict_ids)
+    print('pred_bboxs:', pred_bboxs)
+    print('scores:', scores)

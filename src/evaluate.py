@@ -8,14 +8,14 @@ import numpy as np
 from collections import defaultdict
 
 from detect.yolov5.models.common import DetectMultiBackend
-from identify.pixel_wise_mlp.models.mlp_batch_norm import MLP_BatchNorm
+from identify.predict_score.models.pix_wise_cnn import PointWiseCNN
 from identification_system import identification_system
-from plot_rectangle import plot_rectangle
+from utils.plot_rectangle import plot_rectangle
 
 def evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, save_path, device):
     detect_model = DetectMultiBackend(detect_path, device=device, dnn=False, data=detect_yaml, fp16=True)
     
-    identify_model = MLP_BatchNorm(input_dim=151, output_dim=16)
+    identify_model = PointWiseCNN(input_channels=151, output_channels=16, dropout_prob=0.5)
     identify_model.to(device)
     identify_model.load_state_dict(torch.load(identify_path))
     
