@@ -14,11 +14,33 @@ device: 'cuda:0'
 
 
 train:
-  feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/ite0.0625/train_data.csv'
-  target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/ite0.0625/train_target.csv'
+  feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/blur_5/white/train_data.csv'
+  target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/blur_5/white/train_target.csv'
 validation:
-  feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/ite0.0625/val_data.csv'
-  target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/ite0.0625/val_target.csv'
+  feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/blur_5/white/val_data.csv'
+  target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/blur_5/white/val_target.csv'
 test:
-  feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/ite0.0625/test_data.csv'
-  target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/ite0.0625/test_target.csv'
+  feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/blur_5/white/test_data.csv'
+  target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/blur_5/white/test_target.csv'
+
+  
+# train:
+#   feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/white/train_data.csv'
+#   target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/white/train_target.csv'
+# validation:
+#   feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/white/val_data.csv'
+#   target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/white/val_target.csv'
+# test:
+#   feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/white/test_data.csv'
+#   target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/white/test_target.csv'
+
+
+# train:
+#   feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/train_data.csv'
+#   target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/train_target.csv'
+# validation:
+#   feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/val_data.csv'
+#   target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/val_target.csv'
+# test:
+#   feature: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/test_data.csv'
+#   target: '/mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/test_target.csv'

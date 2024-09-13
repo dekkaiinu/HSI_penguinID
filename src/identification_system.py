@@ -7,10 +7,10 @@ from detect.detector import detector
 from identify.crop_patch.crop_patch import crop_patch
 from identify.weight_mask.weight_mask import weight_mask
 from identify.predict_score.predict_score import GetScoreModule
-from identify.calc_penguin_id.calc_penguin_id import calc_penguin_id
+from identify.calc_penguin_id.calc_penguin_id import calc_penguin_id, argmax_id
 
 
-def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identify_model: torch.nn.Module, device: torch.device, rgb: np.ndarray = None):
+def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identify_model: torch.nn.Module, device: torch.device, rgb: np.ndarray = None, saliency_map: str = 'all', id_resolber: bool = True):
     if rgb is None:
         rgb = hs2rgb(hsi)
     else:
@@ -26,17 +26,38 @@ def identification_system(hsi: np.ndarray, detect_model: torch.nn.Module, identi
     for pred_bbox in pred_bboxs:
         croped_patch = crop_patch(hsi, pred_bbox, crop_size=64)
 
-        mask = weight_mask(croped_patch)
+        if saliency_map == 'all':
+            mask = np.ones((croped_patch.shape[0], croped_patch.shape[1]))
+        elif saliency_map == 'black':
+            mask = weight_mask(croped_patch)
+            mask = 1 - mask
+        elif saliency_map == 'white':
+            mask = weight_mask(croped_patch)
         mask = torch.from_numpy(mask).float().unsqueeze(0)
         mask = mask.to(device)
 
-        input = torch.from_numpy(croped_patch).type(torch.FloatTensor).permute(2, 0, 1).unsqueeze(0)
+        # import cv2
+        # import numpy as np
+        # from hsitools.convert import hs_to_rgb, gamma_correction
+        # mask = mask * 255
+        # cv2.imwrite('mask.png', mask.squeeze(0).cpu().numpy())
+        # exit()
+        input = (torch.tensor(croped_patch, dtype=torch.float32) / 4095).permute(2, 0, 1).unsqueeze(0)
         input = input.to(device)
 
         pred = get_score_module(input, mask)
         pred = pred.data.cpu().numpy().squeeze()
         preds.append(pred)
-    pred_ids, scores = calc_penguin_id(preds)
+        # print(pred)
+    
+    if id_resolber:
+        pred_ids, scores = calc_penguin_id(preds)
+    else:
+        pred_ids, scores = argmax_id(preds)
+    # print('---------------------')
+    # print(pred_ids)
+    # print(scores)
+    # print('---------------------')
 
     return pred_ids, pred_bboxs, scores
 
@@ -53,7 +74,7 @@ if __name__ == "__main__":
     identify_model = PointWiseCNN(input_channels=151, output_channels=16, dropout_prob=0.5)
     identify_model.to(device)
 
-    # identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-08-13/11-22/weight.pt'))
+    identify_model.load_state_dict(torch.load('/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/predict_score/runs/2024-08-29/full_white/weight.pt'))
 
     # hdf5ファイルからhsデータを読み込む
     hdf5_path = '/mnt/hdd3/datasets/hyper_penguin/hyper_penguin/hyper_penguin.h5'
@@ -63,7 +84,7 @@ if __name__ == "__main__":
         hsi = file[f'hsi/{image_id}.npy'][:]
     print(hsi.shape)
 
-    predict_ids, pred_bboxs, scores = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device)
+    predict_ids, pred_bboxs, scores = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device, saliency_map='white', id_resolber=True)
     print('predict_ids:', predict_ids)
     print('pred_bboxs:', pred_bboxs)
     print('scores:', scores)

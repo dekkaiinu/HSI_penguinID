@@ -10,58 +10,59 @@ from collections import defaultdict
 from detect.yolov5.models.common import DetectMultiBackend
 from identify.predict_score.models.pix_wise_cnn import PointWiseCNN
 from identification_system import identification_system
-from utils.plot_rectangle import plot_rectangle
+from util.plot_rectangle import plot_rectangle
 
-def evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, save_path, device):
+def evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, save_path, device, resize_num=1, saliency_map='all', id_resolber=True):
     detect_model = DetectMultiBackend(detect_path, device=device, dnn=False, data=detect_yaml, fp16=True)
-    
+
     identify_model = PointWiseCNN(input_channels=151, output_channels=16, dropout_prob=0.5)
     identify_model.to(device)
     identify_model.load_state_dict(torch.load(identify_path))
-    
-    # pred_path = os.path.join(save_path, 'pred')
-    # gt_path = os.path.join(save_path, 'gt')    
-    # os.makedirs(pred_path, exist_ok=True)
-    # os.makedirs(gt_path, exist_ok=True)
+
     predictions = defaultdict(list)
     ground_truths = defaultdict(list)
 
     for data in tqdm(data_info):
-        height = data['meta_data']['height']
-        width = data['meta_data']['width']
+        image_id = data['image_id']
+        hsi = h5py.File(dataset_path, 'r')[f'hsi/{image_id}.npy'][:]
+        rgb = h5py.File(dataset_path, 'r')[f'rgb/{image_id}.png'][:]
+        # hsi = h5py.File(dataset_path, 'r')[f'hsi/{image_id}'][:]
+        # rgb = h5py.File(dataset_path, 'r')[f'rgb/{image_id}'][:]
+
+        height = hsi.shape[0]
+        width = hsi.shape[1]
+
         target_id_list = ['0373', '0143', '0346', '0166', '0566', '0126', '0473', '0456', '0146', '0356', '0363', '0133', '0553', '0376', '0343', '0477']
+
         flag = False
         gt_ids = []
         gt_bboxs = []
+
         for ann in data['annotation']:
             if ann['penguin_id'] == '0000':
                 continue
             id = target_id_list.index(ann['penguin_id'])
-            gt_bbox = [ann['bbox'][0], ann['bbox'][1], ann['bbox'][0] + ann['bbox'][2], ann['bbox'][1] + ann['bbox'][3]]
+            gt_bbox = [int(ann['bbox'][0] // resize_num), int(ann['bbox'][1] // resize_num), int((ann['bbox'][0] + ann['bbox'][2]) // resize_num), int((ann['bbox'][1] + ann['bbox'][3]) // resize_num)]
             ground_truths[id].append(gt_bbox)
 
-            gt_bbox = [ann['bbox'][0] / width, ann['bbox'][1] / height, (ann['bbox'][0] + ann['bbox'][2]) / width, (ann['bbox'][1] + ann['bbox'][3]) / height]
+            gt_bbox = [gt_bbox[0] / width, gt_bbox[1] / height, gt_bbox[2] / width, gt_bbox[3] / height]
             gt_ids.append(id)
             gt_bboxs.append(gt_bbox)
             flag = True
         if not flag:
             continue
-        
-        image_id = data['image_id']
-        hsi = h5py.File(dataset_path, 'r')[f'hsi/{image_id}.npy'][:]
-        rgb = h5py.File(dataset_path, 'r')[f'rgb/{image_id}.png'][:]
-        preds, pred_bboxs, vote_rates = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device, rgb=rgb)
-  
-        # write_detect_format_data(preds, pred_bboxs, vote_rates, os.path.join(pred_path, f'{image_id}.txt'))
-        # write_gt_format_data(data['annotation'], os.path.join(gt_path, f'{image_id}.txt'))
+
+        preds, pred_bboxs, vote_rates = identification_system(hsi=hsi, detect_model=detect_model, identify_model=identify_model, device=device, rgb=rgb, saliency_map=saliency_map, id_resolber=id_resolber)
+
         for pred_id, pred_bbox, confidence in zip(preds, pred_bboxs, vote_rates):
             pred_bbox = [confidence, int(pred_bbox[0] * hsi.shape[1]), int(pred_bbox[1] * hsi.shape[0]), int(pred_bbox[2] * hsi.shape[1]), int(pred_bbox[3] * hsi.shape[0])]
             predictions[pred_id].append(pred_bbox)
+
         pred_img = plot_rectangle(cv2.cvtColor(rgb.astype(np.uint8), cv2.COLOR_RGB2BGR), pred_bboxs, preds, border_color='cyan', label_size=13, line_width=2)
         tar_img = plot_rectangle(cv2.cvtColor(rgb.astype(np.uint8), cv2.COLOR_RGB2BGR), gt_bboxs, gt_ids, border_color='red', label_size=13, line_width=2)
         cv2.imwrite(os.path.join(save_path, f'{image_id}_pred.png'), pred_img)
         cv2.imwrite(os.path.join(save_path, f'{image_id}_tar.png'), tar_img)
-    
+
     # 評価の実行
     mAP, aps = calculate_ap(predictions, ground_truths, len(target_id_list))
 
@@ -70,7 +71,7 @@ def evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, s
         'mAP': mAP,
         'APs': {f'class_{i}': ap for i, ap in enumerate(aps)}
     }
-    
+
     with open(os.path.join(save_path, 'evaluation_result.json'), 'w') as f:
         json.dump(result, f, indent=4)
     print('saved')
@@ -85,13 +86,10 @@ def calculate_ap(predictions, ground_truths, class_num):
         
         pred = np.array(predictions[class_id])
         gt = np.array(ground_truths[class_id])
-        print(pred)
-        print(gt)
         if len(pred) == 0 or len(gt) == 0:
             aps.append(0)
             continue
         
-        # 信頼度でソート
         pred = pred[pred[:, 0].argsort()[::-1]]
 
         tp = np.zeros(len(pred))
@@ -112,13 +110,11 @@ def calculate_ap(predictions, ground_truths, class_num):
             else:
                 fp[i] = 1
         
-        # 累積和の計算
         cum_tp = np.cumsum(tp)
         cum_fp = np.cumsum(fp)
         rec = cum_tp / len(gt)
         prec = cum_tp / (cum_tp + cum_fp)
         
-        # APの計算
         ap = compute_ap(rec, prec)
         aps.append(ap)
     
@@ -180,12 +176,19 @@ def write_gt_format_data(annotation, save_path, width=2048, height=1080):
 if __name__ == "__main__":
     detect_path = "detect/yolov5/runs/train/exp5/weights/best.pt"
     detect_yaml = "/mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset/penguin_id_yolo.yaml"
-    identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/pixel_wise_mlp/runs/2024-08-15/13-22/weight.pt'
+    # identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/predict_score/runs/2024-08-29/full_white/weight.pt'
+    # identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/predict_score/runs/2024-08-30/0.25_white/weight.pt'
+    # identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/predict_score/runs/2024-08-30/0.0625_white/weight.pt'
+    identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/predict_score/runs/2024-08-29/full_black/weight.pt'
+
+    # identify_path = '/mnt/hdd1/youta/ws/HSI_penguinID/src/identify/predict_score/runs/2024-08-30/full/weight.pt'
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     dataset_path ='/mnt/hdd3/datasets/hyper_penguin/hyper_penguin/hyper_penguin.h5'
+    # dataset_path ='/mnt/hdd3/datasets/hyper_penguin/hyper_penguin_4/hyper_penguin.h5'
+    # dataset_path ='/mnt/hdd3/datasets/hyper_penguin/hyper_penguin_16/hyper_penguin.h5'
     with open('/mnt/hdd1/youta/ws/HSI_penguinID/dataset/test_dataset_info.json', 'r') as f:
         data_info = json.load(f)
-    save_path = './result/'
+    save_path = './result/ablations/black/'
 
-    evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, save_path, device)
+    evaluate(data_info, dataset_path, detect_path, detect_yaml, identify_path, save_path, device, resize_num=1, saliency_map='black', id_resolber=False)

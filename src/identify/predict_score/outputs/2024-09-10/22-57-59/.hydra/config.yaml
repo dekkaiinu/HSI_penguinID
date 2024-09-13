@@ -1,0 +1,18 @@
+batch_size: 128
+train_parameter:
+  epochs: 300
+  lr: 0.001
+  scheduler_gamma: 0.6
+input_dim: 151
+output_dim: 16
+dropout_prob: 0.5
+device: cuda:0
+train:
+  feature: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/train_data.csv
+  target: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/train_target.csv
+validation:
+  feature: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/val_data.csv
+  target: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/val_target.csv
+test:
+  feature: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/test_data.csv
+  target: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/MLP_pretrain/black/test_target.csv

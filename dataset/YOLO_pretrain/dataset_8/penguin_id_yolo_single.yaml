@@ -1,0 +1,9 @@
+# データセットの定義
+path: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_8
+train: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_8/train
+val: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_8/val
+test: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_8/test
+
+
+nc: 1
+names: ['penguin']

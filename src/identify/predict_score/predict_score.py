@@ -7,10 +7,11 @@ class GetScoreModule(nn.Module):
         self.model = model
 
     def forward(self, x: torch.Tensor, weight_mask: torch.Tensor):
-        x = self.model(x)
-        x = x * weight_mask.unsqueeze(1).expand_as(x)
+        output = self.model(x)
+        softmax_output = nn.functional.softmax(output, dim=1)
+        masked_output = softmax_output * weight_mask.unsqueeze(1).expand_as(softmax_output)
         # global average pooling
-        output = torch.mean(x, dim=(2, 3))
+        output = torch.sum(masked_output, dim=(2, 3))
         return output
     
 

@@ -1,0 +1,24 @@
+# データセットの定義
+path: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_16
+train: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_16/train
+val: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_16/val
+test: /mnt/hdd1/youta/ws/HSI_penguinID/dataset/YOLO_pretrain/dataset_16/test
+
+nc: 16
+names: 
+  0: 0373
+  1: 0143
+  2: 0346
+  3: 0166
+  4: 0566
+  5: 0126
+  6: 0473
+  7: 0456
+  8: 0146
+  9: 0356
+  10: 0363
+  11: 0133
+  12: 0553
+  13: 0376
+  14: 0343
+  15: 0477
